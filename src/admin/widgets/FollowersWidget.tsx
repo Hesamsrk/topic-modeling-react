@@ -1,14 +1,14 @@
-import Avatar from "@material-ui/core/Avatar";
-import Box from "@material-ui/core/Box";
-import Card from "@material-ui/core/Card";
-import CardContent from "@material-ui/core/CardContent";
-import Typography from "@material-ui/core/Typography";
-import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
-import ArrowDropUpIcon from "@material-ui/icons/ArrowDropUp";
-import ArrowRightIcon from "@material-ui/icons/ArrowRight";
-import EmojiEmotionsIcon from "@material-ui/icons/EmojiEmotions";
-import FavoriteIcon from "@material-ui/icons/Favorite";
-import ThumbUpIcon from "@material-ui/icons/ThumbUp";
+import Avatar from "@mui/material/Avatar";
+import Box from "@mui/material/Box";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import Typography from "@mui/material/Typography";
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp";
+import ArrowRightIcon from "@mui/icons-material/ArrowRight";
+import EmojiEmotionsIcon from "@mui/icons-material/EmojiEmotions";
+import FavoriteIcon from "@mui/icons-material/Favorite";
+import ThumbUpIcon from "@mui/icons-material/ThumbUp";
 import React from "react";
 import { useTranslation } from "react-i18next";
 

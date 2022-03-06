@@ -1,15 +1,15 @@
-import Button from "@material-ui/core/Button";
-import Card from "@material-ui/core/Card";
-import CardActions from "@material-ui/core/CardActions";
-import CardContent from "@material-ui/core/CardContent";
-import CardHeader from "@material-ui/core/CardHeader";
-import FormControl from "@material-ui/core/FormControl";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
-import FormLabel from "@material-ui/core/FormLabel";
-import Radio from "@material-ui/core/Radio";
-import RadioGroup from "@material-ui/core/RadioGroup";
-import TextField from "@material-ui/core/TextField";
-import LoadingButton from "@material-ui/lab/LoadingButton";
+import Button from "@mui/material/Button";
+import Card from "@mui/material/Card";
+import CardActions from "@mui/material/CardActions";
+import CardContent from "@mui/material/CardContent";
+import CardHeader from "@mui/material/CardHeader";
+import FormControl from "@mui/material/FormControl";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import FormLabel from "@mui/material/FormLabel";
+import Radio from "@mui/material/Radio";
+import RadioGroup from "@mui/material/RadioGroup";
+import TextField from "@mui/material/TextField";
+import LoadingButton from "@mui/lab/LoadingButton";
 import { useFormik } from "formik";
 import { useTranslation } from "react-i18next";
 import * as Yup from "yup";
@@ -73,7 +73,7 @@ const ProfileInformation = () => {
             required
             fullWidth
             id="lastName"
-            label={t("profile.info.form.lastName.label")}
+            label={t<string>("profile.info.form.lastName.label")}
             name="lastName"
             autoComplete="family-name"
             autoFocus
@@ -88,7 +88,7 @@ const ProfileInformation = () => {
             required
             fullWidth
             id="firstName"
-            label={t("profile.info.form.firstName.label")}
+            label={t<string>("profile.info.form.firstName.label")}
             name="firstName"
             autoComplete="given-name"
             disabled={isUpdating}
@@ -113,7 +113,7 @@ const ProfileInformation = () => {
                   key={gender.value}
                   value={gender.value}
                   control={<Radio />}
-                  label={t(gender.label)}
+                  label={t<string>(gender.label)}
                 />
               ))}
             </RadioGroup>
@@ -123,7 +123,7 @@ const ProfileInformation = () => {
             required
             fullWidth
             id="email"
-            label={t("profile.info.form.email.label")}
+            label={t<string>("profile.info.form.email.label")}
             name="email"
             autoComplete="email"
             disabled={isUpdating}

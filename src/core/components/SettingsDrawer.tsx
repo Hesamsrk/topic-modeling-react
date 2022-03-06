@@ -1,14 +1,14 @@
-import Box from "@material-ui/core/Box";
-import Drawer from "@material-ui/core/Drawer";
-import FormControl from "@material-ui/core/FormControl";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
-import IconButton from "@material-ui/core/IconButton";
-import Radio from "@material-ui/core/Radio";
-import RadioGroup from "@material-ui/core/RadioGroup";
-import ToggleButton from "@material-ui/core/ToggleButton";
-import ToggleButtonGroup from "@material-ui/core/ToggleButtonGroup";
-import Typography from "@material-ui/core/Typography";
-import CloseIcon from "@material-ui/icons/Close";
+import Box from "@mui/material/Box";
+import Drawer from "@mui/material/Drawer";
+import FormControl from "@mui/material/FormControl";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import IconButton from "@mui/material/IconButton";
+import Radio from "@mui/material/Radio";
+import RadioGroup from "@mui/material/RadioGroup";
+import ToggleButton from "@mui/material/ToggleButton";
+import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
+import Typography from "@mui/material/Typography";
+import {Close} from "@mui/icons-material";
 import {useTranslation} from "react-i18next";
 import {drawerWidth} from "../config/layout";
 import {useSettings} from "../contexts/SettingsProvider";
@@ -23,11 +23,9 @@ type SettingsDrawerProps = {
 const SettingsDrawer = ({onDrawerToggle, open}: SettingsDrawerProps) => {
     const {
         changeCollapsed,
-        changeDirection,
         changeLanguage,
         changeMode,
         collapsed,
-        direction,
         language,
         mode,
     } = useSettings();
@@ -71,7 +69,7 @@ const SettingsDrawer = ({onDrawerToggle, open}: SettingsDrawerProps) => {
             >
                 <Typography variant="h5">{t("settings.drawer.title")}</Typography>
                 <IconButton color="inherit" onClick={onDrawerToggle} edge="end">
-                    <CloseIcon/>
+                    <Close/>
                 </IconButton>
             </Box>
             <Box sx={{p: 2}}>
@@ -93,12 +91,12 @@ const SettingsDrawer = ({onDrawerToggle, open}: SettingsDrawerProps) => {
                         <FormControlLabel
                             value="en"
                             control={<Radio/>}
-                            label={t("settings.drawer.language.options.en")}
+                            label={t<string>("settings.drawer.language.options.en")}
                         />
                         <FormControlLabel
                             value="fa"
                             control={<Radio/>}
-                            label={t("settings.drawer.language.options.fa")}
+                            label={t<string>("settings.drawer.language.options.fa")}
                         />
                     </RadioGroup>
                 </FormControl>

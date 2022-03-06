@@ -1,9 +1,9 @@
-import Card from "@material-ui/core/Card";
-import CardActions from "@material-ui/core/CardActions";
-import CardContent from "@material-ui/core/CardContent";
-import CardHeader from "@material-ui/core/CardHeader";
-import TextField from "@material-ui/core/TextField";
-import LoadingButton from "@material-ui/lab/LoadingButton";
+import Card from "@mui/material/Card";
+import CardActions from "@mui/material/CardActions";
+import CardContent from "@mui/material/CardContent";
+import CardHeader from "@mui/material/CardHeader";
+import TextField from "@mui/material/TextField";
+import LoadingButton from "@mui/lab/LoadingButton";
 import { useFormik } from "formik";
 import { useTranslation } from "react-i18next";
 import * as Yup from "yup";
@@ -61,7 +61,7 @@ const ProfilePassword = () => {
             required
             fullWidth
             name="oldPassword"
-            label={t("profile.password.form.current.label")}
+            label={t<string>("profile.password.form.current.label")}
             type="password"
             id="oldPassword"
             autoComplete="current-password"
@@ -78,7 +78,7 @@ const ProfilePassword = () => {
             required
             fullWidth
             name="newPassword"
-            label={t("profile.password.form.new.label")}
+            label={t<string>("profile.password.form.new.label")}
             type="password"
             id="newPassword"
             disabled={isUpdating}
@@ -94,7 +94,7 @@ const ProfilePassword = () => {
             required
             fullWidth
             name="confirmPassword"
-            label={t("profile.password.form.confirm.label")}
+            label={t<string>("profile.password.form.confirm.label")}
             type="password"
             id="confirmPassword"
             disabled={isUpdating}

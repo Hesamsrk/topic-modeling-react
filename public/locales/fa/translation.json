@@ -3,6 +3,7 @@
     "drawer": {
       "menu": {
         "calendar": "تقویم",
+        "analysis": "مدل سازی و تحلیل",
         "dashboard": "داشبورد",
         "help": "راهنما",
         "home": "صفحه اصلی",
@@ -48,85 +49,84 @@
       "welcome": {
         "message": "اینجا صفحه اصلیه",
         "subTitle": "خوش اومدی!",
-        "title": "سلام {{name}} جان!"
+        "title": "سلام {{name}} عزیز!"
       }
     }
   },
   "auth": {
     "forgotPassword": {
       "form": {
-        "action": "Send Confirmation",
-        "back": "Back to login",
+        "action": "ارسال کد تایید",
+        "back": "بازگشت به صفحه ورود",
         "email": {
-          "label": "E-mail Address"
+          "label": "آدرس ایمیل"
         }
       },
       "notifications": {
-        "success": "Email has been sent!"
+        "success": "ایمیل ارسال شد!"
       },
-      "subTitle": "To get a validation code, enter the e-mail address associated to your account.",
-      "title": "Get validation code"
+      "subTitle": "جهت دریافت کد تایید ایمیل حساب خود را وارد نمایید!",
+      "title": "دریافت کد تایید"
     },
     "forgotPasswordSubmit": {
       "form": {
-        "action": "Reset Password",
-        "back": "Back to login",
+        "action": "بازیابی رمز ورود",
+        "back": "بازگشت به صفحه ورود",
         "code": {
-          "label": "Code"
+          "label": "کد تایید"
         },
         "confirmPassword": {
-          "label": "Confirm Password"
+          "label": "تکرار رمز عبور جدید"
         },
         "newPassword": {
-          "label": "New Password"
+          "label": "رمز عبور جدید"
         }
       },
       "notifications": {
-        "success": "Your password has been changed!"
+        "success": "رمز عبور شما با موفقیت تغییر کرد!"
       },
-      "subTitle": "Enter the code you received by mail and choose a new password.",
-      "title": "Change your password"
+      "subTitle": "کد تایید دریافتی را وارد و رمز عبور جدید را مشخص نمایید.",
+      "title": "تغییر رمز عبور"
     },
     "login": {
-      "forgotPasswordLink": "Forgot password?",
+      "forgotPasswordLink": "رمز عبور خود را فراموش کرده اید؟",
       "form": {
         "email": {
-          "label": "E-mail Address"
+          "label": "آدرس ایمیل"
         },
         "password": {
-          "label": "Password"
+          "label": "رمز عبور"
         }
       },
-      "newAccountLink": "Don't have an account? Sign Up!",
-      "submit": "Sign in",
-      "title": "Sign in"
+      "newAccountLink": "حساب کاربری ندارید؟ همین حالا یکی بسازید!",
+      "submit": "ورود",
+      "title": "ورود به حساب کاربری"
     },
     "register": {
-      "back": "Back to login",
+      "back": "بازگشت به صفحه ورود",
       "form": {
         "email": {
-          "label": "E-mail Address"
+          "label": "آدرس ایمیل"
         },
         "firstName": {
-          "label": "First Name"
+          "label": "نام"
         },
         "gender": {
-          "label": "Gender",
+          "label": "جنسیت",
           "options": {
-            "f": "F",
-            "m": "M",
-            "n": "NC"
+            "f": "آقا",
+            "m": "خانم"
           }
         },
         "lastName": {
-          "label": "Last Name"
+          "label": "نام خانودادگی"
         }
       },
       "notifications": {
-        "success": "Your account has been created successfully!"
+        "success": "حساب کاربری شما با موفقیت ایجاد گردید!"
       },
-      "submit": "Register",
-      "title": "Register"
+      "submit": "ثبت نام",
+      "title": "ایجاد حساب کاربری جدید"
     }
   },
   "calendar": {
@@ -449,5 +449,39 @@
     "toolbar": {
       "title": "Users"
     }
+  },
+  "analysis": {
+    "title": "مدل سازی و تحلیل",
+    "button": {
+      "title": "افزودن فایل"
+    },
+    "modelList": {
+      "title": "انتخاب مدل",
+      "modelName": "نام مدل",
+      "newModel": "افزودن مدل جدید"
+    },
+    "initialPlaceHolder": "برای ادامه کار ابتدا یک فایل را آپلود کنید!",
+    "predict": {
+      "title": "پیشبینی موضوع متن",
+      "form": {
+        "text": "متن",
+        "stopWords": "نام فایل توقف کلمات",
+        "columnName": "نام ستون داده",
+        "confirm": "پیشبینی موضوع"
+      }
+    },
+    "modelDialog": {
+      "title": "ساخت مدل جدید",
+      "form": {
+        "filename": "نام فایل",
+        "method": "نوع مدل",
+        "stopWords": "نام فایل توقف کلمات",
+        "columnName": "نام ستون داده",
+        "numTopics": "تعداد موضوعات مورد نظر",
+        "cancel": "انصراف",
+        "confirm": "ساخت مدل"
+      }
+    }
   }
+
 }

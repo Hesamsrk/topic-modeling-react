@@ -4,13 +4,13 @@
   "description": "A simple panel for topic modeling project",
   "author": "hesamsrk <hesamsrk@gmail.com>",
   "dependencies": {
-    "@emotion/react": "^11.1.5",
-    "@emotion/styled": "^11.1.5",
+    "@emotion/react": "^11.8.1",
+    "@emotion/styled": "^11.8.1",
     "@fullcalendar/daygrid": "5.7.0",
     "@fullcalendar/react": "5.7.0",
-    "@material-ui/core": "^5.0.0-alpha.35",
-    "@material-ui/icons": "^5.0.0-alpha.35",
-    "@material-ui/lab": "5.0.0-alpha.35",
+    "@mui/icons-material": "^5.4.4",
+    "@mui/lab": "^5.0.0-alpha.71",
+    "@mui/material": "^5.4.4",
     "@sentry/react": "^6.4.1",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -70,5 +70,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "license": "UNLICENSED"
 }

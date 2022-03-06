@@ -3,6 +3,7 @@
     "drawer": {
       "menu": {
         "calendar": "Calendar",
+        "analysis": "Model analysis",
         "dashboard": "Dashboard",
         "help": "Help",
         "home": "Home",
@@ -114,8 +115,7 @@
           "label": "Gender",
           "options": {
             "f": "F",
-            "m": "M",
-            "n": "NC"
+            "m": "M"
           }
         },
         "lastName": {
@@ -448,6 +448,39 @@
     },
     "toolbar": {
       "title": "Users"
+    }
+  },
+  "analysis": {
+    "title": "Model analysis",
+    "button": {
+      "title": "Upload file"
+    },
+    "modelList": {
+      "title": "Select Model",
+      "modelName": "Model name",
+      "newModel": "Add Model"
+    },
+    "initialPlaceHolder": "Upload a file to continue!",
+    "predict": {
+      "title": "Predict topics",
+      "form": {
+        "text": "Text input",
+        "stopWords": "Stop words filename",
+        "columnName": "Column name",
+        "confirm": "Predict topic"
+      }
+    },
+    "modelDialog": {
+      "title": "Train a new model",
+      "form": {
+        "filename": "Filename",
+        "method": "Method",
+        "stopWords": "Stop words filename",
+        "columnName": "Column name",
+        "numTopics": "Number of topics",
+        "cancel": "Cancel",
+        "confirm": "Train model"
+      }
     }
   }
 }

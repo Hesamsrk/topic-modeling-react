@@ -1,11 +1,11 @@
-import Box from "@material-ui/core/Box";
-import Button from "@material-ui/core/Button";
-import Grid from "@material-ui/core/Grid";
-import Link from "@material-ui/core/Link";
-import Paper from "@material-ui/core/Paper";
-import TextField from "@material-ui/core/TextField";
-import Typography from "@material-ui/core/Typography";
-import LoadingButton from "@material-ui/lab/LoadingButton";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Grid from "@mui/material/Grid";
+import Link from "@mui/material/Link";
+import Paper from "@mui/material/Paper";
+import TextField from "@mui/material/TextField";
+import Typography from "@mui/material/Typography";
+import LoadingButton from "@mui/lab/LoadingButton";
 import { useFormik } from "formik";
 import { useTranslation } from "react-i18next";
 import { Link as RouterLink, useNavigate } from "react-router-dom";
@@ -76,7 +76,7 @@ const Login = () => {
               required
               fullWidth
               id="email"
-              label={t("auth.login.form.email.label")}
+              label={t<string>("auth.login.form.email.label")}
               name="email"
               autoComplete="email"
               autoFocus
@@ -92,7 +92,7 @@ const Login = () => {
               required
               fullWidth
               name="password"
-              label={t("auth.login.form.password.label")}
+              label={t<string>("auth.login.form.password.label")}
               type="password"
               id="password"
               autoComplete="current-password"

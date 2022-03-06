@@ -1,18 +1,18 @@
-import Box from "@material-ui/core/Box";
-import Button from "@material-ui/core/Button";
-import Dialog from "@material-ui/core/Dialog";
-import DialogActions from "@material-ui/core/DialogActions";
-import DialogContent from "@material-ui/core/DialogContent";
-import DialogTitle from "@material-ui/core/DialogTitle";
-import FormControl from "@material-ui/core/FormControl";
-import FormLabel from "@material-ui/core/FormLabel";
-import IconButton from "@material-ui/core/IconButton";
-import Radio from "@material-ui/core/Radio";
-import RadioGroup from "@material-ui/core/RadioGroup";
-import TextField from "@material-ui/core/TextField";
-import DeleteIcon from "@material-ui/icons/Delete";
-import LoadingButton from "@material-ui/lab/LoadingButton";
-import MobileDateTimePicker from "@material-ui/lab/MobileDateTimePicker";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Dialog from "@mui/material/Dialog";
+import DialogActions from "@mui/material/DialogActions";
+import DialogContent from "@mui/material/DialogContent";
+import DialogTitle from "@mui/material/DialogTitle";
+import FormControl from "@mui/material/FormControl";
+import FormLabel from "@mui/material/FormLabel";
+import IconButton from "@mui/material/IconButton";
+import Radio from "@mui/material/Radio";
+import RadioGroup from "@mui/material/RadioGroup";
+import TextField from "@mui/material/TextField";
+import DeleteIcon from "@mui/icons-material/Delete";
+import LoadingButton from "@mui/lab/LoadingButton";
+import MobileDateTimePicker from "@mui/lab/MobileDateTimePicker";
 import { getTime } from "date-fns";
 import { useFormik } from "formik";
 import { useTranslation } from "react-i18next";
@@ -104,7 +104,7 @@ const EventDialog = ({
             required
             fullWidth
             id="title"
-            label={t("calendar.form.title.label")}
+            label={t<string>("calendar.form.title.label")}
             name="title"
             autoFocus
             disabled={processing}
@@ -117,7 +117,7 @@ const EventDialog = ({
             margin="normal"
             fullWidth
             id="description"
-            label={t("calendar.form.description.label")}
+            label={t<string>("calendar.form.description.label")}
             name="description"
             disabled={processing}
             value={formik.values.description}
@@ -128,7 +128,7 @@ const EventDialog = ({
             helperText={formik.touched.description && formik.errors.description}
           />
           <MobileDateTimePicker
-            label={t("calendar.form.start.label")}
+            label={t<string>("calendar.form.start.label")}
             inputFormat="dd/MM/yyyy H:mm"
             value={formik.values.start}
             onChange={(date: Date | null) =>
@@ -146,7 +146,7 @@ const EventDialog = ({
             )}
           />
           <MobileDateTimePicker
-            label={t("calendar.form.end.label")}
+            label={t<string>("calendar.form.end.label")}
             inputFormat="dd/MM/yyyy H:mm"
             value={formik.values.end}
             onChange={(date: Date | null) => formik.setFieldValue("end", date)}

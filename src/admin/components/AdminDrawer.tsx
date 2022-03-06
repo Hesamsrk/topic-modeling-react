@@ -1,24 +1,24 @@
-import Avatar from "@material-ui/core/Avatar";
-import Box from "@material-ui/core/Box";
-import Drawer from "@material-ui/core/Drawer";
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemAvatar from "@material-ui/core/ListItemAvatar";
-import ListItemText from "@material-ui/core/ListItemText";
-import AccountTreeIcon from "@material-ui/icons/AccountTree";
-import BarChartIcon from "@material-ui/icons/BarChart";
-import EventIcon from "@material-ui/icons/Event";
-import HelpCenterIcon from "@material-ui/icons/HelpCenter";
-import HomeIcon from "@material-ui/icons/Home";
-import PeopleIcon from "@material-ui/icons/People";
-import PersonIcon from "@material-ui/icons/Person";
-import SettingsIcon from "@material-ui/icons/Settings";
+import Avatar from "@mui/material/Avatar";
+import Box from "@mui/material/Box";
+import Drawer from "@mui/material/Drawer";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemAvatar from "@mui/material/ListItemAvatar";
+import ListItemText from "@mui/material/ListItemText";
 import {useTranslation} from "react-i18next";
 import {NavLink} from "react-router-dom";
 import {useAuth} from "../../auth/contexts/AuthProvider";
 import Logo from "../../core/components/Logo";
 import {drawerCollapsedWidth, drawerWidth} from "../../core/config/layout";
 import {useSettings} from "../../core/contexts/SettingsProvider";
+import AccountTreeIcon from "@mui/icons-material/AccountTree";
+import BarChartIcon from "@mui/icons-material/BarChart";
+import EventIcon from "@mui/icons-material/Event";
+import HelpCenterIcon from "@mui/icons-material/HelpCenter";
+import HomeIcon from "@mui/icons-material/Home";
+import PeopleIcon from "@mui/icons-material/People";
+import PersonIcon from "@mui/icons-material/Person";
+import SettingsIcon from "@mui/icons-material/Settings";
 
 type AdminDrawerProps = {
     collapsed: boolean;
@@ -32,6 +32,11 @@ export const menuItems = [
         icon: HomeIcon,
         key: "admin.drawer.menu.home",
         path: "/admin",
+    },
+    {
+        icon: BarChartIcon,
+        key: "admin.drawer.menu.analysis",
+        path: "/admin/analysis",
     },
     {
         icon: BarChartIcon,

@@ -1,16 +1,16 @@
-import {ThemeProvider as MuiThemeProvider} from "@material-ui/core";
-import CssBaseline from "@material-ui/core/CssBaseline";
-import AdapterDateFns from "@material-ui/lab/AdapterDateFns";
-import LocalizationProvider from "@material-ui/lab/LocalizationProvider";
+import {ThemeProvider as MuiThemeProvider} from "@mui/material";
+import AdapterDateFns from "@mui/lab/AdapterDateFns";
+import LocalizationProvider from "@mui/lab/LocalizationProvider";
 import React, {createContext, useContext, useEffect, useMemo, useState,} from "react";
 import {useLocalStorage} from "../hooks/useLocalStorage";
 import {createTheme} from "../theme";
 import {Directions, getLangConfigs, Languages} from "../utils/langConfigs";
 import i18n from "i18next";
+import {CssBaseline} from "@mui/material";
 
 interface SettingsContextInterface {
     collapsed: boolean;
-    direction: string;
+    direction: Directions;
     language: Languages
     mode: string;
     open: boolean;
@@ -29,7 +29,7 @@ type SettingsProviderProps = {
 
 const SettingsProvider = ({children}: SettingsProviderProps) => {
     const [collapsed, setCollapsed] = useLocalStorage("sidebarcollapsed", false);
-    const [direction, setDirection] = useLocalStorage("direction", "ltr");
+    const [direction, setDirection] = useLocalStorage<Directions>("direction", "ltr");
     const [language, setLanguage] = useLocalStorage<Languages>("language", "en");
     const [mode, setMode] = useLocalStorage("mode", "light");
     const [open, setOpen] = useState(false);
@@ -42,7 +42,7 @@ const SettingsProvider = ({children}: SettingsProviderProps) => {
     useEffect(() => {
         i18n.changeLanguage(language).then(_ => console.log("language changed to:", i18n.language));
         setDirection(getLangConfigs(language).direction)
-    }, [language])
+    }, [language, setDirection])
 
     const theme = useMemo(
         () => createTheme(direction as Directions, mode as "dark" | "light", language as Languages),
@@ -90,7 +90,7 @@ const SettingsProvider = ({children}: SettingsProviderProps) => {
         >
             <MuiThemeProvider theme={theme}>
                 <LocalizationProvider dateAdapter={AdapterDateFns}>
-                    <CssBaseline/>
+                    <CssBaseline enableColorScheme />
                     {children}
                 </LocalizationProvider>
             </MuiThemeProvider>

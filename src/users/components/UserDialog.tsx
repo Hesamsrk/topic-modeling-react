@@ -1,17 +1,17 @@
-import Button from "@material-ui/core/Button";
-import Checkbox from "@material-ui/core/Checkbox";
-import Dialog from "@material-ui/core/Dialog";
-import DialogActions from "@material-ui/core/DialogActions";
-import DialogContent from "@material-ui/core/DialogContent";
-import DialogTitle from "@material-ui/core/DialogTitle";
-import FormControl from "@material-ui/core/FormControl";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
-import FormLabel from "@material-ui/core/FormLabel";
-import MenuItem from "@material-ui/core/MenuItem";
-import Radio from "@material-ui/core/Radio";
-import RadioGroup from "@material-ui/core/RadioGroup";
-import TextField from "@material-ui/core/TextField";
-import LoadingButton from "@material-ui/lab/LoadingButton";
+import Button from "@mui/material/Button";
+import Checkbox from "@mui/material/Checkbox";
+import Dialog from "@mui/material/Dialog";
+import DialogActions from "@mui/material/DialogActions";
+import DialogContent from "@mui/material/DialogContent";
+import DialogTitle from "@mui/material/DialogTitle";
+import FormControl from "@mui/material/FormControl";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import FormLabel from "@mui/material/FormLabel";
+import MenuItem from "@mui/material/MenuItem";
+import Radio from "@mui/material/Radio";
+import RadioGroup from "@mui/material/RadioGroup";
+import TextField from "@mui/material/TextField";
+import LoadingButton from "@mui/lab/LoadingButton";
 import { useFormik } from "formik";
 import { useTranslation } from "react-i18next";
 import * as Yup from "yup";
@@ -91,7 +91,7 @@ const UserDialog = ({
             required
             fullWidth
             id="lastName"
-            label={t("userManagement.form.lastName.label")}
+            label={t<string>("userManagement.form.lastName.label")}
             name="lastName"
             autoComplete="family-name"
             autoFocus
@@ -106,7 +106,7 @@ const UserDialog = ({
             required
             fullWidth
             id="firstName"
-            label={t("userManagement.form.firstName.label")}
+            label={t<string>("userManagement.form.firstName.label")}
             name="firstName"
             autoComplete="given-name"
             disabled={processing}
@@ -132,7 +132,7 @@ const UserDialog = ({
                   disabled={processing}
                   value={gender.value}
                   control={<Radio />}
-                  label={t(gender.label)}
+                  label={t<string>(gender.label)}
                 />
               ))}
             </RadioGroup>
@@ -142,7 +142,7 @@ const UserDialog = ({
             required
             fullWidth
             id="email"
-            label={t("userManagement.form.email.label")}
+            label={t<string>("userManagement.form.email.label")}
             name="email"
             autoComplete="email"
             disabled={processing}
@@ -158,7 +158,7 @@ const UserDialog = ({
             disabled={processing}
             fullWidth
             select
-            label={t("userManagement.form.role.label")}
+            label={t<string>("userManagement.form.role.label")}
             name="role"
             value={formik.values.role}
             onChange={formik.handleChange}
@@ -178,7 +178,7 @@ const UserDialog = ({
               onChange={formik.handleChange}
               checked={formik.values.disabled}
               control={<Checkbox />}
-              label={t("userManagement.form.disabled.label")}
+              label={t<string>("userManagement.form.disabled.label")}
             />
           </FormControl>
         </DialogContent>
