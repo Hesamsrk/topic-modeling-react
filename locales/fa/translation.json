@@ -1,0 +1,487 @@
+{
+  "admin": {
+    "drawer": {
+      "menu": {
+        "calendar": "تقویم",
+        "analysis": "مدل سازی و تحلیل",
+        "dashboard": "داشبورد",
+        "help": "راهنما",
+        "home": "صفحه اصلی",
+        "projects": "پروژه ها",
+        "settings": "تنظیمات",
+        "userManagement": "کاربران"
+      }
+    },
+    "header": {
+      "notifications": {
+        "empty": {
+          "title": "شما پیام جدیدی ندارید"
+        },
+        "seeAll": "مشاهده تمام پیام ها"
+      }
+    },
+    "home": {
+      "achievement": {
+        "action": "مشاهده پروفایل",
+        "description": "شما {{progress}}% از پروفایل خود را تکمیل کرده اید.",
+        "title": "تبریک {{name}} !"
+      },
+      "followers": {
+        "units": {
+          "likes": "لایک ها",
+          "love": "قلب ها",
+          "smiles": "خنده ها"
+        }
+      },
+      "meeting": {
+        "title": "ملاقات ها"
+      },
+      "targets": {
+        "income": "درآمد",
+        "followers": "دنبال کنندگان",
+        "title": "اهداف",
+        "views": "تعداد مشاهدات"
+      },
+      "views": {
+        "action": "مشاهده داشبورد",
+        "unit": "تعداد مشاهدات"
+      },
+      "welcome": {
+        "message": "اینجا صفحه اصلیه",
+        "subTitle": "خوش اومدی!",
+        "title": "سلام {{name}} عزیز!"
+      }
+    }
+  },
+  "auth": {
+    "forgotPassword": {
+      "form": {
+        "action": "ارسال کد تایید",
+        "back": "بازگشت به صفحه ورود",
+        "email": {
+          "label": "آدرس ایمیل"
+        }
+      },
+      "notifications": {
+        "success": "ایمیل ارسال شد!"
+      },
+      "subTitle": "جهت دریافت کد تایید ایمیل حساب خود را وارد نمایید!",
+      "title": "دریافت کد تایید"
+    },
+    "forgotPasswordSubmit": {
+      "form": {
+        "action": "بازیابی رمز ورود",
+        "back": "بازگشت به صفحه ورود",
+        "code": {
+          "label": "کد تایید"
+        },
+        "confirmPassword": {
+          "label": "تکرار رمز عبور جدید"
+        },
+        "newPassword": {
+          "label": "رمز عبور جدید"
+        }
+      },
+      "notifications": {
+        "success": "رمز عبور شما با موفقیت تغییر کرد!"
+      },
+      "subTitle": "کد تایید دریافتی را وارد و رمز عبور جدید را مشخص نمایید.",
+      "title": "تغییر رمز عبور"
+    },
+    "login": {
+      "forgotPasswordLink": "رمز عبور خود را فراموش کرده اید؟",
+      "form": {
+        "email": {
+          "label": "آدرس ایمیل"
+        },
+        "password": {
+          "label": "رمز عبور"
+        }
+      },
+      "newAccountLink": "حساب کاربری ندارید؟ همین حالا یکی بسازید!",
+      "submit": "ورود",
+      "title": "ورود به حساب کاربری"
+    },
+    "register": {
+      "back": "بازگشت به صفحه ورود",
+      "form": {
+        "email": {
+          "label": "آدرس ایمیل"
+        },
+        "firstName": {
+          "label": "نام"
+        },
+        "gender": {
+          "label": "جنسیت",
+          "options": {
+            "f": "آقا",
+            "m": "خانم"
+          }
+        },
+        "lastName": {
+          "label": "نام خانودادگی"
+        }
+      },
+      "notifications": {
+        "success": "حساب کاربری شما با موفقیت ایجاد گردید!"
+      },
+      "submit": "ثبت نام",
+      "title": "ایجاد حساب کاربری جدید"
+    }
+  },
+  "calendar": {
+    "confirmations": {
+      "delete": "Are you sure you want to delete this event?"
+    },
+    "form": {
+      "color": {
+        "label": "Color"
+      },
+      "description": {
+        "label": "Description"
+      },
+      "end": {
+        "label": "End Date"
+      },
+      "start": {
+        "label": "Start Date"
+      },
+      "title": {
+        "label": "Title"
+      }
+    },
+    "modal": {
+      "add": {
+        "action": "Add",
+        "title": "Add Event"
+      },
+      "edit": {
+        "action": "Edit",
+        "title": "Edit Event"
+      }
+    },
+    "notifications": {
+      "addSuccess": "{{event}} has been added!",
+      "deleteSuccess": "Event has been deleted!",
+      "updateSuccess": "{{event}} has been updated!"
+    },
+    "title": "Calendar"
+  },
+  "common": {
+    "backHome": "Back to Home",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "confirmation": "Confirmation",
+    "delete": "Delete",
+    "edit": "Edit",
+    "errors": {
+      "forbidden": {
+        "subTitle": "You don't have access to view this page"
+      },
+      "notFound": {
+        "subTitle": "Sorry, we couldn’t find the page you’re looking for. Perhaps you’ve mistyped the URL? Be sure to check your spelling.",
+        "title": "Oops!"
+      },
+      "unexpected": {
+        "subTitle": "Something went wrong! If the problem persists, contact us!",
+        "title": "Oops!"
+      },
+      "underConstructions": {
+        "subTitle": "We are actively working on this page.",
+        "title": "Under constructions!"
+      }
+    },
+    "reset": "Reset",
+    "retry": "Try Again",
+    "selected": "Selected",
+    "snackbar": {
+      "error": "Error",
+      "success": "Success"
+    },
+    "today": "Today",
+    "update": "Update",
+    "validations": {
+      "email": "Invalid email address",
+      "max": "Must be {{size}} characters or less",
+      "min": "Must be {{size}} characters or more",
+      "passwordMatch": "Password does not match",
+      "required": "Required"
+    }
+  },
+  "dashboard": {
+    "activity": {
+      "title": "Activity"
+    },
+    "budget": {
+      "legend": {
+        "unit": "Budget ($K)"
+      },
+      "title": "Budget"
+    },
+    "orderProgress": {
+      "title": "Orders"
+    },
+    "overview": {
+      "orders": "Orders",
+      "sales": "Sales",
+      "users": "Users",
+      "visits": "Visits"
+    },
+    "progress": {
+      "title": "Progress"
+    },
+    "salesByAge": {
+      "title": "Sales by Age"
+    },
+    "salesByCategory": {
+      "legend": {
+        "books": "Books",
+        "movies": "Movies & TV",
+        "software": "Software"
+      },
+      "title": "Sales by Category"
+    },
+    "salesHistory": {
+      "title": "Sales History",
+      "unit": "$ today"
+    },
+    "salesProgress": {
+      "title": "Sales"
+    },
+    "teams": {
+      "columns": {
+        "progress": "Progress",
+        "team": "Team",
+        "value": "Value"
+      },
+      "title": "Teams Progress"
+    },
+    "users": {
+      "title": "Recent Users"
+    },
+    "visitProgress": {
+      "title": "Visits"
+    },
+    "title": "Dashboard"
+  },
+  "faq": {
+    "noAnswerLink": "Can't find it here? Check out our Help Center.",
+    "questions": {
+      "title1": "What is React Admin?",
+      "answer1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortiseget.",
+      "title2": "How does it work?",
+      "answer2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortiseget.",
+      "title3": "What are the features available?",
+      "answer3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortiseget.",
+      "title4": "Who is maintaining the project?",
+      "answer4": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortiseget.",
+      "title5": "What is the license of the project?",
+      "answer5": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortiseget.",
+      "title6": "How can I contribute to the project?",
+      "answer6": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortiseget."
+    },
+    "title": "Frequently Asked Questions"
+  },
+  "help": {
+    "menu": {
+      "contact": "Contact",
+      "faq": "FAQ",
+      "guide": "Guide",
+      "support": "Support"
+    },
+    "title": "Help Center"
+  },
+  "landing": {
+    "cta": {
+      "main": "Sign in",
+      "mainAuth": "Continue as {{name}}",
+      "secondary": "Source code"
+    },
+    "features": {
+      "more": "More on Github",
+      "title": "Main Features"
+    },
+    "title": "Free and open-source admin application made with React and Material-UI"
+  },
+  "notifications": {
+    "newComment": "<bold>{{user}}</bold> has written a new comment on your profile",
+    "unreadMessages": "You have <bold>{{quantity}}</bold> unread messages"
+  },
+  "profile": {
+    "activity": {
+      "empty": "Logs of your activity will show up here!",
+      "logs": {
+        "eventAdded": "<bold>You</bold> added a new event: <bold>{{resource}}</bold>",
+        "eventUpdated": "<bold>You</bold> updated event: <bold>{{resource}}</bold>",
+        "userAdded": "<bold>You</bold> added a new user: <bold>{{resource}}</bold>",
+        "userDeleted": "<bold>You</bold> deleted user: <bold>{{resource}}</bold>",
+        "userUpdated": "<bold>You</bold> updated user: <bold>{{resource}}</bold>"
+      }
+    },
+    "completion": {
+      "title": "Profile Completion"
+    },
+    "info": {
+      "form": {
+        "email": {
+          "label": "Email Address"
+        },
+        "firstName": {
+          "label": "First Name"
+        },
+        "gender": {
+          "label": "Gender",
+          "options": {
+            "f": "Female",
+            "m": "Male",
+            "n": "NC"
+          }
+        },
+        "lastName": {
+          "label": "Last Name"
+        }
+      },
+      "title": "Update profile"
+    },
+    "menu": {
+      "activity": "Activity",
+      "info": "Information",
+      "password": "Password"
+    },
+    "notifications": {
+      "informationUpdated": "Information updated!",
+      "passwordChanged": "Password changed!"
+    },
+    "password": {
+      "form": {
+        "current": {
+          "label": "Current Password"
+        },
+        "confirm": {
+          "label": "Confirm Password"
+        },
+        "new": {
+          "label": "New Password"
+        }
+      },
+      "title": "Change your password"
+    }
+  },
+  "settings": {
+    "drawer": {
+      "language": {
+        "label": "Language",
+        "options": {
+          "en": "English",
+          "fa": "Persian"
+        }
+      },
+      "mode": {
+        "label": "Mode",
+        "options": {
+          "dark": "Dark",
+          "light": "Light"
+        }
+      },
+      "sidebar": {
+        "label": "Sidebar",
+        "options": {
+          "collapsed": "Collapsed",
+          "full": "Full"
+        }
+      },
+      "title": "Settings"
+    }
+  },
+  "userManagement": {
+    "confirmations": {
+      "delete": "Are you sure you want to delete this user?"
+    },
+    "form": {
+      "disabled": {
+        "label": "Disabled"
+      },
+      "email": {
+        "label": "Email Address"
+      },
+      "firstName": {
+        "label": "First Name"
+      },
+      "gender": {
+        "label": "Gender",
+        "options": {
+          "f": "Female",
+          "m": "Male",
+          "n": "NC"
+        }
+      },
+      "lastName": {
+        "label": "Last Name"
+      },
+      "role": {
+        "label": "Role"
+      }
+    },
+    "modal": {
+      "add": {
+        "action": "Add",
+        "title": "Add User"
+      },
+      "edit": {
+        "action": "Edit",
+        "title": "Edit User"
+      }
+    },
+    "notifications": {
+      "addSuccess": "{{user}} has been added!",
+      "deleteSuccess": "User(s) have been deleted!",
+      "updateSuccess": "{{user}} has been updated!"
+    },
+    "table": {
+      "headers": {
+        "actions": "Actions",
+        "gender": "Gender",
+        "role": "Role",
+        "status": "Status",
+        "user": "User"
+      }
+    },
+    "toolbar": {
+      "title": "Users"
+    }
+  },
+  "analysis": {
+    "title": "مدل سازی و تحلیل",
+    "button": {
+      "title": "افزودن فایل"
+    },
+    "modelList": {
+      "title": "انتخاب مدل",
+      "modelName": "نام مدل",
+      "newModel": "افزودن مدل جدید"
+    },
+    "initialPlaceHolder": "برای ادامه کار ابتدا یک فایل را آپلود کنید!",
+    "predict": {
+      "title": "پیشبینی موضوع متن",
+      "form": {
+        "text": "متن",
+        "stopWords": "نام فایل توقف کلمات",
+        "columnName": "نام ستون داده",
+        "confirm": "پیشبینی موضوع"
+      }
+    },
+    "modelDialog": {
+      "title": "ساخت مدل جدید",
+      "form": {
+        "filename": "نام فایل",
+        "method": "نوع مدل",
+        "stopWords": "نام فایل توقف کلمات",
+        "columnName": "نام ستون داده",
+        "numTopics": "تعداد موضوعات مورد نظر",
+        "cancel": "انصراف",
+        "confirm": "ساخت مدل"
+      }
+    }
+  }
+
+}
